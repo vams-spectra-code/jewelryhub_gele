@@ -39,7 +39,7 @@ function Header() {
           </li>
         </ul>
         <div className={styles.bookIcon}>
-          <CalendarClock size={24} color="#aa60c8" />
+          <CalendarClock size={24} color="#d4af37" />
         </div>
       </div>
     </nav>
