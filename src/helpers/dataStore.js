@@ -10,6 +10,8 @@ import userImg2 from "@/assets/images/customer2.jpg";
 import userImg3 from "@/assets/images/customer3.jpg";
 import userImg4 from "@/assets/images/customer4.jpg";
 import userImg5 from "@/assets/images/customer5.jpg";
+import ownerImg from "@/assets/images/me.jpg";
+
 import { CheckCircle, GraduationCap, Scissors, Sparkles } from "lucide-react";
 
 export const images = {
@@ -20,6 +22,8 @@ export const images = {
   collage5,
   collage6,
 };
+
+export const ownerImage = ownerImg;
 
 export const imagesArr = Object.values(images);
 

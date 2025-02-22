@@ -1,0 +1,85 @@
+/* About Me Section */
+.about {
+  padding: 80px 10%;
+  background: #f8f4f0;
+  color: #3d2b1f;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+/* Image Styling */
+.imageContainer {
+  flex: 1;
+  max-width: 400px;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+/* Content Section */
+.content {
+  flex: 1;
+  max-width: 500px;
+}
+
+.heading {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #b89430;
+  margin-bottom: 10px;
+}
+
+.text {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+/* Features List */
+.list {
+  list-style: none;
+  padding: 0;
+}
+
+.list li {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  gap: 8px;
+}
+
+/* Icons */
+.icon {
+  color: #b89430;
+}
+
+/* Call to Action Button */
+.button {
+  display: inline-block;
+  padding: 12px 18px;
+  background: #b89430;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 8px;
+  text-decoration: none;
+  margin-top: 20px;
+  transition: background 0.3s ease;
+}
+
+.button:hover {
+  background: #3d2b1f;
+}
