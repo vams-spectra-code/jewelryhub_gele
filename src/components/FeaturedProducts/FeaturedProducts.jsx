@@ -31,7 +31,7 @@ const FeaturedProducts = () => {
               src={product.image}
               alt={product.name}
               width={250}
-              height={250}
+              height={270}
               className={styles.image}
             />
             <h3 className={styles.name}>{product.name}</h3>
