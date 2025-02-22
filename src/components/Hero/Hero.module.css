@@ -51,6 +51,20 @@
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
+.heroImage {
+  position: absolute;
+  width: 450px;
+  height: 550px;
+
+  /* width: 300px; */
+  /* height: 200px; */
+}
+
+.heroImageWrapper {
+  width: 500px;
+  height: 560px;
+}
+
 /* Mobile Responsive */
 @media (max-width: 768px) {
   .hero {

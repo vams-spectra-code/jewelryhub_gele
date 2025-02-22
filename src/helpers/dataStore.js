@@ -13,3 +13,5 @@ export const images = {
   collage5,
   collage6,
 };
+
+export const imagesArr = Object.values(images);
