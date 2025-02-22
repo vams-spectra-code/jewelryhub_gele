@@ -73,3 +73,8 @@ export const services = [
     icon: <Scissors size={40} color="#b89430" />,
   },
 ];
+
+export const igLink =
+  "https://www.instagram.com/jewelryhub_gele/?__coig_challenged=1";
+
+export const contactNo = "+234 909 410 8171";

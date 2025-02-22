@@ -45,9 +45,9 @@ const Hero = () => {
         <AnimatePresence>
           <motion.div
             key={currentIndex}
-            initial={{ opacity: 0, scale: 1.1 }}
+            initial={{ opacity: 0, scale: 1 }}
             animate={{ opacity: 1, scale: 1.1 }}
-            exit={{ opacity: 0, scale: 1.15 }}
+            exit={{ opacity: 0, scale: 1.1 }}
             transition={{ duration: 1 }}
             className={styles.heroImage}
           >

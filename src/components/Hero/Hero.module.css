@@ -5,7 +5,7 @@
   justify-content: space-between;
   padding: 50px 10%;
   background: linear-gradient(to right, #f8f4f0, #ffffff);
-  height: 110vh;
+  height: 90vh;
 }
 
 /* Text Content */
@@ -49,12 +49,14 @@
 .heroImage .image {
   border-radius: 15px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
 }
 
 .heroImage {
   position: absolute;
   width: 450px;
-  height: 550px;
+  height: 75vh;
 
   /* width: 300px; */
   /* height: 200px; */
@@ -62,7 +64,7 @@
 
 .heroImageWrapper {
   width: 500px;
-  height: 560px;
+  height: 440px;
 }
 
 /* Mobile Responsive */
