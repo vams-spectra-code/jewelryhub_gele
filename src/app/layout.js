@@ -4,7 +4,7 @@ import Header from "@/components/Header/Header";
 
 const poppins = Montserrat({
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"], // Choose weights you need
+  // weight: ["400", "500", "600", "700"], // Choose weights you need
   style: ["normal"],
   display: "swap",
 });

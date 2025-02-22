@@ -10,6 +10,7 @@ import {
   CalendarClock,
   MenuIcon,
 } from "lucide-react";
+import Button from "../Button/Button";
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -35,11 +36,16 @@ function Header() {
             <Link href="/">About</Link>
           </li>
           <li>
-            <Link href="/">Contacut Us</Link>
+            <Link href="/">Contact Us</Link>
           </li>
         </ul>
-        <div className={styles.bookIcon}>
-          <CalendarClock size={24} color="#d4af37" />
+        <div className={styles.navRight}>
+          <CalendarClock
+            size={24}
+            className={styles.bookIcon}
+            color="#d4af37"
+          />
+          <Button variant="primary">Logout</Button>
         </div>
       </div>
     </nav>

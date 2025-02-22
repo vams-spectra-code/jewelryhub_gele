@@ -16,8 +16,17 @@
   font-weight: 300;
 }
 
+.bookIcon {
+  margin-right: 18px;
+}
+
 .link {
   text-transform: uppercase;
+}
+
+.navRight {
+  display: flex;
+  align-items: center;
 }
 
 .subtitle {
@@ -62,7 +71,7 @@
 }
 
 .navLinks a:hover {
-  color: #aa60c8;
+  color: #b89430;
 }
 
 /* Mobile Styles */

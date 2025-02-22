@@ -1,0 +1,43 @@
+/* Default Button Styles */
+.button {
+  font-size: 1rem;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  font-weight: bold;
+}
+
+/* Primary Button (Filled) */
+.primary {
+  background-color: #d4af37;
+  color: white;
+  border: none;
+}
+
+.primary:hover {
+  background-color: #b89430;
+}
+
+/* Accent Button (Outlined) */
+.accent {
+  background: transparent;
+  color: #d4af37;
+  border: 2px solid #d4af37;
+}
+
+.accent:hover {
+  background-color: rgba(212, 175, 55, 0.1);
+}
+
+/* Minimal Button (Text Only) */
+.minimal {
+  background: none;
+  border: none;
+  color: #3d2b1f;
+  font-weight: normal;
+}
+
+.minimal:hover {
+  color: #d4af37;
+}
