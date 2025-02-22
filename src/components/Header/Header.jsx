@@ -26,9 +26,6 @@ function Header() {
 
         <ul className={`${styles.navLinks} ${isOpen ? styles.show : ""}`}>
           <li>
-            <Link href="/">Home</Link>
-          </li>
-          <li>
             <Link href="/">Book</Link>
           </li>
           <li>
@@ -36,6 +33,9 @@ function Header() {
           </li>
           <li>
             <Link href="/">About</Link>
+          </li>
+          <li>
+            <Link href="/">Contacut Us</Link>
           </li>
         </ul>
         <div className={styles.bookIcon}>

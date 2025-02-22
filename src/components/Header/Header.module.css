@@ -16,7 +16,8 @@
   font-weight: 300;
 }
 
-.bookIcon {
+.link {
+  text-transform: uppercase;
 }
 
 .subtitle {

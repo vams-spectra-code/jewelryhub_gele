@@ -15,7 +15,7 @@ const Hero = () => {
           handcrafted gele.
         </p>
         <a href="#shop" className={styles.cta}>
-          Shop Now
+          Book Now
         </a>
       </div>
 
@@ -24,7 +24,7 @@ const Hero = () => {
           src={heroImg}
           alt="Jewelry and Gele"
           width={500}
-          height={500}
+          height={550}
           className={styles.image}
         />
       </div>
