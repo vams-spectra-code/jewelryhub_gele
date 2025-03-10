@@ -1,0 +1,8 @@
+.geleStyles {
+  width: 100%; /* ✅ Prevents shifting */
+  min-width: 180px; /* ✅ Ensures consistent width */
+  box-sizing: border-box; /* ✅ Prevents border from affecting width */
+}
+.text {
+  color: #e2b82d;
+}

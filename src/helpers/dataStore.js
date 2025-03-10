@@ -12,6 +12,14 @@ import userImg4 from "@/assets/images/customer4.jpg";
 import userImg5 from "@/assets/images/customer5.jpg";
 import ownerImg from "@/assets/images/me.jpg";
 
+import artist1 from "@/assets/images/istockphoto-1.jpg";
+import artist2 from "@/assets/images/istockphoto-2.jpg";
+import artist3 from "@/assets/images/istockphoto-3.jpg";
+import artist4 from "@/assets/images/istockphoto-4.jpg";
+import artist5 from "@/assets/images/istockphoto-5.jpg";
+import artist6 from "@/assets/images/istockphoto-6.jpg";
+import artist7 from "@/assets/images/istockphoto-7.jpg";
+
 import { CheckCircle, GraduationCap, Scissors, Sparkles } from "lucide-react";
 
 export const images = {
@@ -24,6 +32,16 @@ export const images = {
 };
 
 export const ownerImage = ownerImg;
+
+export const artists = {
+  artist1,
+  artist2,
+  artist3,
+  artist4,
+  artist5,
+  artist6,
+  artist7,
+};
 
 export const imagesArr = Object.values(images);
 

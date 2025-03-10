@@ -1,0 +1,55 @@
+.modalDialog {
+  position: fixed;
+  display: flex;
+  margin-left: 30px;
+}
+.modalContent,
+.modalBody,
+.calendar {
+  background-color: #cecece;
+  color: black;
+}
+
+:global(.react-time-picker) {
+  border: 2px solid #e7eaf0a6;
+  max-width: 50%;
+  border-radius: 30px;
+  background: #cecece;
+  color: black;
+}
+:global(.react-time-picker__wrapper) {
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+:global(.react-time-picker__inputGroup) {
+  flex-grow: unset;
+}
+:global(.react-calendar) {
+  border: 2px solid #e7eaf0a6;
+  border-radius: 10px;
+}
+:global(.react-calendar__month-view__weekdays__weekday abbr) {
+  text-decoration: none;
+}
+:global(.react-calendar__month-view__days__day) {
+  color: black;
+}
+:global(.react-calendar__month-view__days__day) {
+  border: 2px dashed #eeeeee;
+  border-radius: 20px;
+}
+:global(.react-calendar__month-view__days__day):focus {
+  background: #797979;
+}
+/*:global(.react-calendar__month-view__days__day--weekend) {
+  color: red;
+}*/
+:global(.react-calendar__tile--now) {
+  background: none;
+}
+:global(.react-calendar__tile--active) {
+  background: #797979;
+}

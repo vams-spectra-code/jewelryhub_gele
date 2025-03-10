@@ -2,3 +2,15 @@
   padding: 0;
   margin: 0;
 }
+body {
+  transform: scale(1); /* Prevents unexpected scaling */
+  transform-origin: top left;
+  zoom: unset !important;
+  min-height: 100vh;
+  min-width: 100vw;
+  overflow-x: hidden;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}

@@ -3,7 +3,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 50px 10%;
+  padding: 5px 10%;
   background: linear-gradient(to right, #f8f4f0, #ffffff);
   height: 90vh;
 }
@@ -29,20 +29,8 @@
   color: #555;
 }
 
-.cta {
-  display: inline-block;
+.booknow {
   margin-top: 20px;
-  padding: 12px 24px;
-  background-color: #d4af37;
-  color: white;
-  font-size: 1rem;
-  text-decoration: none;
-  border-radius: 5px;
-  transition: 0.3s;
-}
-
-.cta:hover {
-  background-color: #b89430;
 }
 
 /* Image */

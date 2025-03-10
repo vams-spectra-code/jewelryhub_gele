@@ -2,12 +2,17 @@
 import styles from "./Hero.module.css";
 import Image from "next/image";
 import { AnimatePresence, motion } from "motion/react";
-
+import { useRouter } from "next/navigation";
 import { imagesArr } from "@/helpers/dataStore";
 import { useEffect, useState } from "react";
+import Button from "../Button/Button";
 
 const Hero = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const router = useRouter();
+  const handleBookNowClick = () => {
+    router.push("/booking");
+  };
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -27,9 +32,13 @@ const Hero = () => {
           Elevate your style with our exquisite collection of jewelry and
           handcrafted gele.
         </p>
-        <a href="#shop" className={styles.cta}>
+        <Button
+          className={`${styles.booknow}`}
+          variant="primary"
+          onClick={handleBookNowClick}
+        >
           Book Now
-        </a>
+        </Button>
       </div>
 
       {/* <div className={styles.heroImage}>
