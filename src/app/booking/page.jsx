@@ -1,15 +1,15 @@
 "use client";
 
 import React, { useState, useRef, useEffect } from "react";
+import { MapPin, CalendarClock } from "lucide-react";
+import GeleStyles from "@/components/GeleStyles/GeleStyles";
+import { artists } from "@/helpers/dataStore";
+import { images } from "@/helpers/dataStore";
 import Select from "react-select";
 import "bootstrap/dist/css/bootstrap.min.css";
 import styles from "./Booking.module.css";
 import CalendarClockModal from "@/components/CalendarClockModal/CalendarClockModal";
-import { MapPin, CalendarClock } from "lucide-react";
-import { artists } from "@/helpers/dataStore";
 import Image from "next/image";
-import GeleStyles from "@/components/GeleStyles/GeleStyles";
-import { images } from "@/helpers/dataStore";
 
 const Booking = () => {
   const [selectedArtist, setSelectedArtist] = useState("");
@@ -52,7 +52,7 @@ const Booking = () => {
 
   const handleDateTimeSelect = (date, time) => {
     setSelectedDate(`${date} at ${time}`);
-    setShowCalendar(false); // Close the modal after selecting date and time
+    setShowCalendar(false);
   };
 
   const handleSelectGele = (gele) => {
@@ -71,7 +71,7 @@ const Booking = () => {
   ];
 
   const options = [
-    { value: "", label: "Customer's Own Makeup Artist" },
+    { value: "", label: "My Makeup Artist" },
     ...makeupArtists.map((artist) => ({
       value: artist.id,
       label: (
@@ -240,13 +240,14 @@ const Booking = () => {
 
           {/* Right Section - Gele Styles & Pricing */}
           <div className={`col-md-6 ${styles.geleStylesWrapper}`}>
-            <div className="card p-4 shadow-sm">
+            <div className={`card p-4 shadow-sm ${styles.geleStylesCard}`}>
               <h4 className="mb-3">Choose Your Gele Style</h4>
               {geleStylesData.map((gele) => (
                 <GeleStyles
                   key={gele.id}
                   gele={gele}
                   onSelect={handleSelectGele}
+                  className="mb-3"
                 />
               ))}
             </div>

@@ -1,0 +1,24 @@
+.pageWrapper {
+  margin-top: 0;
+}
+.cardContainer {
+  padding-top: 120px;
+  padding-bottom: 20px;
+}
+
+.serviceCard {
+  background: #fff;
+  border: none;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.serviceCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 2px 5px 15px 2px rgba(224, 179, 17, 0.785);
+}
+
+.icon {
+  color: #d4af37;
+}

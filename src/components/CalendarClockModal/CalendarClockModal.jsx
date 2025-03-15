@@ -66,6 +66,7 @@ const CalendarClockModal = ({ onClose, onDateTimeSelect }) => {
               onChange={setSelectedDate}
               value={selectedDate}
               className={`mb-3 w-100 ${styles.calendar}`}
+              minDate={new Date()}
             />
 
             {/* ✅ Scroll wheel works here, but entire page won’t scroll */}
@@ -80,7 +81,7 @@ const CalendarClockModal = ({ onClose, onDateTimeSelect }) => {
             />
           </div>
           <div className="modal-footer">
-            <button className="btn btn-primary" onClick={handleConfirm}>
+            <button className={`btn ${styles.btn}`} onClick={handleConfirm}>
               Confirm
             </button>
             <button className="btn btn-secondary" onClick={onClose}>

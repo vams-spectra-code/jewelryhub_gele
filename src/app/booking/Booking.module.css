@@ -7,6 +7,6 @@
   padding-top: 120px;
   margin-bottom: 60px; /* Pushes content below fixed header */
 }
-/* .geleStylesWrapper {
-  overflow: scroll;
-} */
+.geleStylesWrapper {
+  overflow-y: scroll;
+}

@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import { useRouter } from "next/navigation";
+import { useRouter, usePathname } from "next/navigation";
 import styles from "./Header.module.css";
 import Link from "next/link";
 import Button from "../Button/Button";
@@ -20,6 +20,7 @@ function Header({ hideNav = false, currentPage }) {
   const handleLoginClick = () => {
     router.push("/login");
   };
+  const pathname = usePathname();
 
   return (
     <nav className={`${styles.container} ${hideNav ? styles.hideNav : ""}`}>
@@ -30,17 +31,22 @@ function Header({ hideNav = false, currentPage }) {
 
         {!hideNav && (
           <ul className={`${styles.navLinks} ${isOpen ? styles.show : ""}`}>
-            <li>
-              <Link href="/">Book</Link>
+            <li className={pathname === "/" ? styles.activeLink : ""}>
+              <Link href="/">Home</Link>
             </li>
-            <li>
-              <Link href="/">Services</Link>
+            <li className={pathname === "/booking" ? styles.activeLink : ""}>
+              <Link href="/booking">Book</Link>
             </li>
-            <li>
-              <Link href="/">About</Link>
+            <li
+              className={pathname === "/ourservices" ? styles.activeLink : ""}
+            >
+              <Link href="/ourservices">Services</Link>
             </li>
-            <li>
-              <Link href="/">Contact Us</Link>
+            <li className={pathname === "/about" ? styles.activeLink : ""}>
+              <Link href="/about">About</Link>
+            </li>
+            <li className={pathname === "/contact" ? styles.activeLink : ""}>
+              <Link href="/contact">Contact Us</Link>
             </li>
           </ul>
         )}

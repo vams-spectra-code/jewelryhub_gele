@@ -4,6 +4,9 @@
   background: #f8f4f0;
   color: #3d2b1f;
 }
+.txt {
+  font-weight: bold;
+}
 
 .container {
   display: flex;

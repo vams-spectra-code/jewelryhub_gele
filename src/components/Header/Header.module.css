@@ -58,6 +58,7 @@
   color: #333;
 }
 
+/* Nav Link Styles */
 .navLinks {
   display: flex;
   list-style: none;
@@ -77,6 +78,12 @@
 
 .navLinks a:hover {
   color: #b89430;
+}
+.activeLink {
+  color: #d4af37 !important;
+  font-weight: bolder;
+  border-bottom: 2px solid #d4af37;
+  padding-bottom: 2px;
 }
 
 /* Mobile Styles */

@@ -42,8 +42,9 @@ const AboutMe = () => {
           </h2>
           <p className={styles.text}>
             I am a passionate and certified Gele & Auto-Gele artist with years
-            of experience creating **stunning** and **unique** headwraps for
-            brides, special occasions, and everyday elegance.
+            of experience creating <span className={styles.txt}>stunning</span>{" "}
+            and <span className={styles.txt}>unique</span> headwraps for brides,
+            special occasions, and everyday elegance.
           </p>
 
           {/* List of Features */}
@@ -79,7 +80,7 @@ const AboutMe = () => {
           </ul>
 
           {/* Call to Action */}
-          <Link href="/">
+          <Link href="/booking">
             <motion.p
               className={styles.button}
               whileHover={{ scale: 1.05 }}

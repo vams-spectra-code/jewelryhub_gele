@@ -1,0 +1,24 @@
+.pageWrapper {
+  padding: 40px 20px;
+}
+
+/* Selected Gele Card */
+.selected {
+  border: 2px solid #d4af37 !important;
+  box-shadow: 0px 4px 10px rgba(212, 175, 55, 0.5);
+  transform: scale(1.05);
+}
+
+/* Order Form */
+.orderForm {
+  max-width: 500px;
+  margin: auto;
+  background: #fff;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.orderForm:hover {
+  transform: scale(1.02);
+  box-shadow: 0 5px 15px rgba(224, 179, 17, 0.785);
+}
