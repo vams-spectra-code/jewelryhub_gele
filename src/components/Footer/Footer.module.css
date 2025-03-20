@@ -1,0 +1,104 @@
+/* Footer Section */
+.footer {
+  background: #3d2b1f;
+  color: #fff;
+  padding: 50px 10%;
+  font-size: 14px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.heading {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #b89430;
+}
+
+/* Quick Links */
+.links {
+  list-style: none;
+  padding: 0;
+}
+
+.links li {
+  margin-bottom: 5px;
+}
+
+.links a {
+  text-decoration: none;
+  color: #f8f4f0;
+  transition: color 0.3s ease;
+}
+
+.links a:hover {
+  color: #b89430;
+}
+
+/* Contact Section */
+.icon {
+  margin-right: 5px;
+}
+
+/* Social Media */
+.socialIcons {
+  display: flex;
+  gap: 10px;
+}
+
+.socialIcons a {
+  color: #b89430;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.socialIcons a:hover {
+  color: #fff;
+  transform: scale(1.1);
+}
+
+/* Newsletter */
+.newsletter {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.newsletter input {
+  padding: 8px;
+  border: 1px solid #b89430;
+  border-radius: 5px;
+  outline: none;
+}
+
+.newsletter button {
+  padding: 8px 10px;
+  border: none;
+  background: #b89430;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.newsletter button:hover {
+  background: #f8f4f0;
+  color: #3d2b1f;
+}
+
+/* Copyright Section */
+.copyright {
+  text-align: center;
+  margin-top: 20px;
+  padding-top: 10px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}

@@ -1,0 +1,84 @@
+/* Hero Section Styles */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 10%;
+  background: linear-gradient(to right, #f8f4f0, #ffffff);
+  height: 90vh;
+}
+
+/* Text Content */
+.heroContent {
+  max-width: 500px;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #3d2b1f;
+}
+
+.title span {
+  color: #d4af37; /* Gold color */
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  color: #555;
+}
+
+.cta {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 24px;
+  background-color: #d4af37;
+  color: white;
+  font-size: 1rem;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.cta:hover {
+  background-color: #b89430;
+}
+
+/* Image */
+.heroImage .image {
+  border-radius: 18px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.heroImage {
+  position: absolute;
+  width: 400px;
+  height: 450px;
+}
+
+.heroImageWrapper {
+  width: 400px;
+  height: 450px;
+  margin-right: 30px;
+  /* width: 500px; */
+  /* height: 440px; */
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+    padding: 40px 5%;
+  }
+
+  .heroImage {
+    margin-top: 20px;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+}

@@ -1,0 +1,75 @@
+/* Featured Products Section */
+.featured {
+  text-align: center;
+  padding: 50px 10%;
+  background-color: #fff;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #3d2b1f;
+  margin-bottom: 30px;
+}
+
+/* Product Grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+/* Product Card */
+.card {
+  background: #f8f4f0;
+  padding-bottom: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.image {
+  border-radius: 8px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  margin-bottom: 10px;
+}
+
+.name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #3d2b1f;
+}
+
+.price {
+  font-size: 1rem;
+  color: #b89430;
+  margin: 5px 0;
+}
+
+.cta {
+  background-color: #d4af37;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.cta:hover {
+  background-color: #b89430;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+}

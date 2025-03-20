@@ -1,0 +1,110 @@
+.container {
+  background: white; /* Adjust for your theme */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.05);
+  position: fixed; /* Stick to top */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  /* height: 50px; */
+}
+
+.title {
+  font-weight: 300;
+}
+
+.bookIcon {
+  margin-right: 18px;
+}
+
+.link {
+  text-transform: uppercase;
+}
+
+.navRight {
+  display: flex;
+  align-items: center;
+}
+
+.subtitle {
+  color: #d4af37;
+  font-weight: 600;
+}
+
+/* Navbar Styles */
+
+.navContainer {
+  padding: 20px 10px;
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+
+.navLinks {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.navLinks li {
+  display: inline-block;
+}
+
+.navLinks a {
+  text-decoration: none;
+  color: #333;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.navLinks a:hover {
+  color: #b89430;
+}
+
+/* Mobile Styles */
+.menuBtn {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .menuBtn {
+    display: block;
+  }
+
+  .navLinks {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background: white;
+    padding: 15px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .navLinks.show {
+    display: flex;
+  }
+
+  .navLinks li {
+    text-align: center;
+    padding: 10px 0;
+  }
+}
