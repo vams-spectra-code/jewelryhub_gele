@@ -69,7 +69,6 @@ const CalendarClockModal = ({ onClose, onDateTimeSelect }) => {
               minDate={new Date()}
             />
 
-            {/* ✅ Scroll wheel works here, but entire page won’t scroll */}
             <TimePicker
               onChange={setSelectedTime}
               value={selectedTime}

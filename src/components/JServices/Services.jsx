@@ -11,6 +11,9 @@ const Services = () => {
   const handleCardClick = (path) => {
     router.push(path);
   };
+  const handleSeeMoreClick = () => {
+    router.push("/ourservices");
+  };
 
   return (
     <section className={styles.services}>
@@ -31,6 +34,7 @@ const Services = () => {
           hidden: { opacity: 0, y: 30 },
           visible: { opacity: 1, y: 0, transition: { staggerChildren: 0.3 } },
         }}
+        whileInView={{ opacity: 1, y: 0 }}
       >
         {services.slice(0, 4).map((service) => (
           <motion.div
@@ -49,10 +53,23 @@ const Services = () => {
             <p className={styles.description}>{service.description}</p>
           </motion.div>
         ))}
-        {/* <div className="d-flex justify-content-center align-items-center mt-3">
-          <span className="me-2 text-primary">See More</span>
-          <FaArrowCircleRight size={50} className="text-primary" />
-        </div> */}
+        <motion.div
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
+          onClick={handleSeeMoreClick}
+          style={{ cursor: "pointer" }}
+          className={styles.seeMoreContainer}
+        >
+          <span
+            className={styles.seeMoreText}
+            style={{
+              verticalAlign: "middle",
+            }}
+          >
+            See More
+          </span>
+          <FaArrowCircleRight size={40} style={{ verticalAlign: "middle" }} />
+        </motion.div>
       </motion.div>
     </section>
   );

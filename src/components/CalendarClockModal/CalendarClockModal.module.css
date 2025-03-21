@@ -82,3 +82,8 @@
 :global(.react-calendar__tile.react-calendar__tile--now:hover) {
   background: #3a3a3a !important;
 }
+
+:global(.react-calendar__tile:disabled) {
+  background: none !important;
+  color: #ababab !important;
+}

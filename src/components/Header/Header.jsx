@@ -28,7 +28,6 @@ function Header({ hideNav = false, currentPage }) {
         <h1 className={styles.title}>
           Jewelryhub<span className={styles.subtitle}>Gele</span>
         </h1>
-
         {!hideNav && (
           <ul className={`${styles.navLinks} ${isOpen ? styles.show : ""}`}>
             <li className={pathname === "/" ? styles.activeLink : ""}>
@@ -38,7 +37,9 @@ function Header({ hideNav = false, currentPage }) {
               <Link href="/booking">Book</Link>
             </li>
             <li
-              className={pathname === "/ourservices" ? styles.activeLink : ""}
+              className={
+                pathname?.startsWith("/ourservices") ? styles.activeLink : ""
+              }
             >
               <Link href="/ourservices">Services</Link>
             </li>

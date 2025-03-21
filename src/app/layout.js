@@ -1,5 +1,6 @@
 "use client";
 
+import React from "react";
 import { Montserrat } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header/Header";
@@ -15,23 +16,38 @@ const poppins = Montserrat({
 });
 
 export default function RootLayout({ children }) {
-  const pathname = usePathname(); // Get the current page path
-  console.log("Current pathname:", pathname);
+  const pathname = usePathname();
 
   return (
     <html lang="en">
       <Head />
       <body className={poppins.className}>
-        <Header />
+        {/* ✅ PAGE LOAD ANIMATION */}
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
-          exit={{ opacity: 0, y: -20 }}
-          transition={{ duration: 0.5, ease: "easeInOut" }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
         >
-          {children}
+          <Header />
+
+          <motion.main>
+            {React.Children.map(children, (child, index) =>
+              child ? (
+                <motion.section
+                  key={index}
+                  whileInView={{ opacity: [0, 1], x: [-12, -5, 0] }}
+                  initial={{ opacity: 0, y: 50 }}
+                  transition={{ duration: 0.6, delay: index * 0.1 }}
+                  viewport={{ once: true }}
+                >
+                  {child}
+                </motion.section>
+              ) : null
+            )}
+          </motion.main>
+
+          <Footer />
         </motion.div>
-        <Footer /> {/* Footer will always be visible */}
       </body>
     </html>
   );

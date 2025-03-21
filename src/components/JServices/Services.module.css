@@ -27,6 +27,7 @@
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
 }
 
 .card:hover {
@@ -51,4 +52,16 @@
 .description {
   font-size: 1rem;
   color: #3d2b1f;
+}
+.seeMoreContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+  gap: 5px;
+}
+
+.seeMoreText {
+  font-weight: bold;
+  font-size: 1rem;
 }

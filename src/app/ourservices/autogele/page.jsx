@@ -57,7 +57,7 @@ export default function AutoGelePage() {
       initial={{ opacity: 0, y: 30 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, ease: "easeOut" }}
-      className={`container mt-5 ${styles.pageWrapper}`}
+      className={`container ${styles.pageWrapper}`}
     >
       {/* Page Title */}
       <motion.h2
